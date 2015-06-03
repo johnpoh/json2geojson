@@ -1,0 +1,39 @@
+<html>
+
+
+<script src="json2geojson.js"></script>
+
+<script>
+var json = [{"firstName":"John", "lastName":"Doe", "Lat": "103.21", "Lng": "35.2"}, {"firstName":"Anna", "lastName":"Smith", "Lat": "103.21", "Lng": "35.2"}, {"firstName":"Peter", "lastName":"Jones", "Lat": "103.21", "Lng": "35.2"}]
+
+var prop = 'firstName';
+
+var geojson = j2gConvert(json, prop);
+
+console.log(geojson);
+
+
+var newgj = j2gAddproperty(geojson,json,'lastName');
+
+console.log(newgj);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
